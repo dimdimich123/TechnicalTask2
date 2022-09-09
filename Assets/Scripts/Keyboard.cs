@@ -7,7 +7,7 @@ public class Keyboard : Control
         float x = Input.GetAxis("Horizontal");
         if(x != 0)
         {
-            _player.StartMoving(new Vector3(x, 0, 0));
+            Player.StartMoving(new Vector3(x, 0, 0));
         }
     }
 }

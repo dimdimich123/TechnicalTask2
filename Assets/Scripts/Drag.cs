@@ -33,7 +33,7 @@ public class Drag : Control, IDragHandler, IPointerDownHandler, IPointerExitHand
 
     private void MovePlayer(float pointerWorldPositionX)
     {
-        Vector3 direction = new Vector3(pointerWorldPositionX - _player.gameObject.transform.position.x, 0, 0);
-        _player.StartMoving(direction);
+        Vector3 direction = new Vector3(pointerWorldPositionX - Player.gameObject.transform.position.x, 0, 0);
+        Player.StartMoving(direction);
     }
 }

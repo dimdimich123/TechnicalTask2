@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class Control : MonoBehaviour
 {
-    protected PlayerMovement _player;
+    protected PlayerMovement Player;
 
-    public void SetPlayer(PlayerMovement player) =>  _player = player;
+    public void SetPlayer(PlayerMovement player) => Player = player;
 }

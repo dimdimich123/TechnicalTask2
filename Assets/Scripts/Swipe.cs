@@ -20,7 +20,7 @@ public class Swipe : Control, IPointerUpHandler, IPointerDownHandler
             (eventData.pressPosition - eventData.position).sqrMagnitude >= _minDistance * _minDistance)
         {
             Vector3 direction = distanceX < 0 ? new Vector3(-_moveDistance, 0, 0) : new Vector3(_moveDistance, 0, 0);
-            _player.StartMoving(direction);
+            Player.StartMoving(direction);
         }
     }
 }
