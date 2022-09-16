@@ -53,15 +53,17 @@
     <UnityVersion>2020.3.25f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\PauseMenuView.cs" />
+    <Compile Include="Assets\Scripts\Keyboard.cs" />
+    <Compile Include="Assets\Scripts\Drag.cs" />
+    <Compile Include="Assets\Scripts\Swipe.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\PauseMenuModel.cs" />
+    <Compile Include="Assets\Scripts\PauseMenuPresenter.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Settings.cs" />
     <Compile Include="Assets\Scripts\DataSerializer.cs" />
     <Compile Include="Assets\Scripts\Control.cs" />
-    <Compile Include="Assets\Scripts\Swipe.cs" />
-    <Compile Include="Assets\Scripts\SettingsData.cs" />
-    <Compile Include="Assets\Scripts\Keyboard.cs" />
-    <Compile Include="Assets\Scripts\MenuController.cs" />
-    <Compile Include="Assets\Scripts\Drag.cs" />
-    <Compile Include="Assets\Scripts\PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

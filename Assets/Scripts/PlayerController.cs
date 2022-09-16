@@ -1,14 +1,17 @@
 using UnityEngine;
 using System;
 
+/// <summary>
+/// Stores and changes the type of character control.
+/// </summary>
 public class PlayerController : MonoBehaviour
 {
     [SerializeField] private PlayerMovement _player;
-    [SerializeField] private MenuController _menu;
+    [SerializeField] private PauseMenuView _pauseMenu;
 
     private void OnEnable()
     {
-        _menu.OnToggleChange += ChangeControl;
+        _pauseMenu.OnChangeControl += ChangeControl;
     }
 
     private void ChangeControl(Type type)
@@ -19,6 +22,6 @@ public class PlayerController : MonoBehaviour
 
     private void OnDisable()
     {
-        _menu.OnToggleChange -= ChangeControl;
+        _pauseMenu.OnChangeControl -= ChangeControl;
     }
 }

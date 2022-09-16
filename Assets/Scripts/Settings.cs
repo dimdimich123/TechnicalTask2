@@ -1,5 +1,8 @@
 using System;
 
+/// <summary>
+/// Stores data about the selected control type.
+/// </summary>
 [Serializable]
 public class Settings
 {
